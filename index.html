@@ -4,7 +4,29 @@
     <meta charset="UTF-8">
     <title>My new Title! Where does this show up? </title>
 </head>
-<body>
+ <body>
+    <header>
 
-</body>
+
+      <div class="container">
+          <h1 class="logo"> <h1>My name is Maaike Kellenberger</h1> </a></h1>
+        <nav style="position: fixed; z-index: 2; background-color: cornsilk; padding: 10px; opacity: 0.9">
+          <ul class="menu">
+            <li><a href="{{ url_for('home') }}">Willkommen</a></li>
+            <li><a href="{{ url_for('quali') }}">BA/MA-Arbeiten</a></li>
+            <li><a href="{{ url_for('lacovis') }}">LaCoVis</a></li>
+            <li><a href="{{ url_for('about') }}">Impressum</a></li>
+          </ul>
+        </nav>
+      </div>
+
+    </header>
+
+    <div class="content">
+
+    {% block content %}
+    {% endblock %}
+
+    </div>
+ </body>
 </html>
