@@ -23,9 +23,25 @@
 
         <div class="content" style="top: 10%; left: 5%; font-family: Futura, sans-serif; width: 100%">
             <h1>Coding Ideas / Plans</h1>
-            <p style="color: darkorchid">Doable in the near future: </p>
+            <p style="color: darkorchid">Doable in the near future (or so I... like to believe): </p>
                     <ul>
+                        <li>
+                            Added July 15th, 22: <br> I have a simple python program that checks whether a certain website has had any changes to it compared to the lastly stored version. If no, then continue, if yes, it should alert me. [There is this apartment/House "Genossenschaft" where you can't apply unless there's an opening available. Every weekday at 4pm, they publish the newly available apartments, which, most days, is none – meaning the website is not changed. I forget to check every day, so I want the script to alert me if there are changes to the website. THE PLACES THEY ARE RENTING ARE SURROUNDED BY NATURE AND LITTLE GARDENS, COME ON.]
+                            <br>
+                            Checking itself is not the problem; my program stores a current version of the website and compares it to the newly "fetched" version.
+                            <br>
+                            But... How do I get ~my system~ to run this program without my doing (and thinking of it) every day, say, 4:10 pm? (And give me a feedback if changes were made?)
+                            <ol>
+                                Apparently, crontab is no longer what one uses (so I read), instead I should go with "launchd".
+                                That is what I'm currently <a href="https://www.launchd.info/" target="_blank"> reading up on</a>;
+                                but to be honest, it looks quite complicated!
+                                (Whereas crontab didn't.) That's okay, I'll figure out a way.
+
+                            </ol>
+                            <br>
+                    </li>
                     <li>
+                        Added June 22: <br>
                         Random Movie Picker with "heavy" / "non-heavy" category: Build own database with movies we own / want to watch and add parameters such as: Year of publication, Cast, Genre (the common ones). Then, also to be added: A binary heavy/non-heavy parameter: This value is rather unique to our / my interpretation of heavy so that's why I can't just use the already existing random movie pickers that have similar options. 
                         The idea would be that one could input certain constraints such as "I want the movie to be from the 90ies or later" and then also filter out the "heavy" one. [[This is of course mainly to practice OOP]]
                     </li>
